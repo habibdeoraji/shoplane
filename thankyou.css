@@ -45,8 +45,10 @@ body{
 }
 
 #cloth-menu,#acces-menu{
- font-weight: 500;
- cursor:pointer;
+    font-weight: 500;
+    cursor:pointer;
+    text-decoration: none;
+    color: #000000;
 }
 
 
@@ -173,7 +175,8 @@ body{
 
 
 
-/* Footer */
+/* Page footer */
+
 
 #page-footer{
     display: flex;
@@ -181,14 +184,29 @@ body{
     background-color: #1D1C1F;
     color: rgb(214, 211, 211);
     line-height: 1;
+    margin-top:100px;
     justify-content:space-between
+}
+
+#online-store,#helpful-links,#partners{
+    display: flex;
+    flex-direction: column;
 }
 
 #online-store :nth-child(n+2),#helpful-links :nth-child(n+2),#partners :nth-child(n+2){
     cursor: pointer;
+    
+}
+
+
+.footer-link{
+    text-decoration: none;
+    color:rgb(214, 211, 211);
+    font-weight:300;
+    line-height:2
 }
 
 #online-store :first-child ,#helpful-links :first-child,#partners :first-child, #address:first-child{
     font-weight: 600;
     margin-bottom: 10px;
-}
+} 

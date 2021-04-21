@@ -3,6 +3,7 @@
 
 body{
     margin:0;
+    padding-top:100px;
     font-family: 'Poppins', sans-serif;
 
 }
@@ -45,6 +46,8 @@ body{
 #cloth-menu,#acces-menu{
  font-weight: 500;
  cursor:pointer;
+ text-decoration: none;
+ color: #000000;
 }
 
 
@@ -97,41 +100,70 @@ body{
 }
 
 
-/* carousal card */
-
-/* #carousal-card{
-    min-height: 200px;
-    margin-top:80px;
-    padding: 40px;
-
+/* Slick Carousel */
+.slider-wrapper{
+    width: 80%;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    height:300px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    text-align: center;
 }
 
 .slides{
-    display: flex;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.slides img{
+    height: 100%;
 }
 
 
 
-#main-container{
-    min-height: 300px
-} */
+/* Dots Style */
+.slick-dots li button:before {
+    font-family: slick;
+    font-size: 14px;
+    line-height: 20px;
+    position: absolute;
+    top: 10px;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    content: '•';
+    text-align: center;
+    opacity: 0.25;
+    color: rgb(100, 98, 98);
 
+}
 
+.slick-dots li.slick-active button:before {
+    opacity: .75;
+    color: rgb(100, 98, 98);
+}
 
 
 /* Main-content */
-
 #main-container{
-    margin-top:100px;
+    min-height: 800px;
     display: flex;
     flex-wrap: wrap;
     padding:4% 8% 0;
+    padding-top:0
 
 }
 
 #clothing-card-wrapper{
     display: flex;
     
+}
+
+#clothing-section,#accessory-section{
+    padding-top: 80px;
 }
 
 #accessory-card-wrapper{
@@ -169,23 +201,37 @@ body{
 
 
 /* Page footer */
-
-
 #page-footer{
     display: flex;
     padding: 50px 20%;
     background-color: #1D1C1F;
     color: rgb(214, 211, 211);
     line-height: 1;
+    margin-top:100px;
     justify-content:space-between
+}
+
+#online-store,#helpful-links,#partners{
+    display: flex;
+    flex-direction: column;
 }
 
 #online-store :nth-child(n+2),#helpful-links :nth-child(n+2),#partners :nth-child(n+2){
     cursor: pointer;
+    
+}
+
+
+.footer-link{
+    text-decoration: none;
+    color:rgb(214, 211, 211);
+    font-weight:300;
+    line-height:2
 }
 
 #online-store :first-child ,#helpful-links :first-child,#partners :first-child, #address:first-child{
     font-weight: 600;
     margin-bottom: 10px;
 } 
+
 
