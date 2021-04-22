@@ -50,12 +50,17 @@ $(function () {
 
     // Right Section
     console.log(totalAmount)
+
+    
+
+
     $('#checkout-total-amount span').text(totalAmount)
 
     $('#place-order-button').click(function () {
         productList = JSON.stringify([]);
-        localStorage.setItem('cartValue', '0')
-        localStorage.setItem('productList', productList)
+        localStorage.setItem('cartValue', '0');
+        localStorage.setItem('productList', productList);
+        localStorage.setItem('promoCode', 'false')
         location.href = './thankyou.html'
     })
 

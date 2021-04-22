@@ -38,27 +38,27 @@ $(function () {
             // Right section
             var contentCard = $("<div>").addClass("content-card");
 
-            var productName = $("<h1>").text(productData.name);
+            var productName = $("<h1>").addClass('product-name').text(productData.name);
             contentCard.append(productName);
 
-            var productBrand = $("<h3>").text(productData.brand);
+            var productBrand = $("<h1>").addClass('product-brand').text(productData.brand);
             contentCard.append(productBrand);
 
-            var productPriceWrapper = $("<h3>").text("Price: Rs ");
+            var productPriceWrapper = $("<h3>").addClass('price-prefix').text("Price: Rs ");
 
             var productPrice = $("<span>").text(productData.price);
             productPriceWrapper.append(productPrice);
 
             contentCard.append(productPriceWrapper);
 
-            var description = $("<h3>").text("Description");
+            var description = $("<h3>").addClass('description').text("Description");
 
             var descriptionText = $("<p>").addClass("description-text").text(productData.description);
 
             description.append(descriptionText);
             contentCard.append(description);
 
-            var productPreview = $("<h3>").text("Product Preview");
+            var productPreview = $("<h3>").addClass('product-preview').text("Product Preview");
             contentCard.append(productPreview);
 
             var productPhotosWrapper = $("<div>");
@@ -145,7 +145,12 @@ $(function () {
 
 
 
+
         })
+
+
+
+
 
         // ProductList
         if (localStorage.getItem('productList') == 'NaN' || localStorage.getItem('productList') == null || localStorage.getItem('productList') == "") {

@@ -210,3 +210,74 @@ body{
     font-weight: 600;
     margin-bottom: 10px;
 } 
+
+
+
+
+
+
+
+
+
+
+/* MOBILE RESPONSIVE */
+
+@media (max-width: 480px){
+
+    /* Header */
+
+    #nav-bar{
+        padding:0 25%; 
+        width:100%;
+    }
+    #left-nav-bar{
+        min-width:250px
+    }
+
+    #cloth-menu,#acces-menu{
+        margin:0px 2px;
+        display:none;
+    }
+    #search-box{
+        display:none;
+    }
+    #right-nav-bar{
+        margin-left:10px;
+        margin-right:10px;
+    }
+
+    /* Checkout content */
+    #thankyou-content{
+        width:70%;
+        margin: 10px auto;
+    }
+
+
+
+
+
+    /* page footer */
+
+    #page-footer{
+        padding: 20px 5%;
+        margin-top:50px;
+        text-align:center
+    }
+    #online-store :first-child ,#helpful-links :first-child,#partners :first-child, #address:first-child{
+        font-weight: 600;
+        margin-bottom: 10px;
+        font-size: 13px;
+    } 
+
+    #online-store :nth-child(n+2),#helpful-links :nth-child(n+2),#partners :nth-child(n+2),#address :nth-child(n+2){
+        font-size: 10px;
+        margin: 0;
+    }
+
+    #address-first{
+        font-size:13px ;
+        font-weight: 600;
+
+    }
+
+}

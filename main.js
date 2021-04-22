@@ -54,11 +54,11 @@ $('.slider-wrapper').slick({
         productDetailsLink.append(productPreview);
         var productContent = $('<div>').addClass('product-content');
 
-        var productName = $('<p>').addClass('product-name').text(productItem.name);
+        var productName = $('<h4>').addClass('product-name').text(productItem.name);
 
-        var productBrand = $('<p>').addClass('product-brand').text(productItem.brand);
+        var productBrand = $('<h5>').addClass('product-brand').text(productItem.brand);
 
-        var productPrice = $('<p>').addClass('product-price').text(productItem.price);
+        var productPrice = $('<p>').addClass('product-price').text('Rs '+productItem.price);
 
 
         productContent.append(productName, productBrand, productPrice);
