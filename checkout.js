@@ -49,18 +49,52 @@ $(function () {
     }
 
     // Right Section
-    console.log(totalAmount)
-
-    
-
 
     $('#checkout-total-amount span').text(totalAmount)
+
+
+
+    // Total amount
+    var discountedAmount=localStorage.getItem('discountedAmount');
+    console.log(discountedAmount>0,discountedAmount);
+    if(discountedAmount>0){
+        $('#checkout-total-amount span').text(discountedAmount);
+        $('#promo-code-status').css('display', 'block');
+    }
+
+    // Promocode apply
+    $('#discount-form').submit(function (e) {
+        e.preventDefault();
+        var promoCodeValue=$('#discount-coupon').val();
+        $('#discount-coupon').val("");
+
+        if(promoCodeValue=="HABIB10"){
+
+            if(localStorage.getItem('promoCode')=='true'){
+                alert("Promo code is already applied!!")
+            }else{
+                localStorage.setItem('promoCode','true');
+                localStorage.setItem('discountedAmount',Math.round(totalAmount*0.9));
+
+                $('#promo-code-status').css('display', 'block');
+
+                $('#checkout-total-amount span').text(Math.round(totalAmount*0.9));
+            }
+            
+        }else{
+            alert("Invalid promocode")
+        }
+
+    })
+
+
 
     $('#place-order-button').click(function () {
         productList = JSON.stringify([]);
         localStorage.setItem('cartValue', '0');
         localStorage.setItem('productList', productList);
-        localStorage.setItem('promoCode', 'false')
+        localStorage.setItem('promoCode', "false");
+        localStorage.setItem('discountedAmount',0);
         location.href = './thankyou.html'
     })
 

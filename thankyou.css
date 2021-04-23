@@ -104,7 +104,6 @@ body{
 
 
 /* Main content */
-
 #thankyou-content{
     display: flex;
     flex-direction: column;
@@ -113,6 +112,7 @@ body{
     margin-bottom: 160px;
     padding-top:120px
 }
+
 
 
 #tick-mark-wrapper{

@@ -110,6 +110,54 @@ body {
 
 /* Main content */
 
+
+#notice{
+    box-sizing: content-box;
+    background-color:rgb(247, 247, 247);
+    box-shadow: 1px 1px 2px;
+    padding: 5px 10px;
+    border: 2px dotted black;
+    border-radius:20px;
+    position: absolute;
+    right: 600px;
+    top: 90px;
+    text-align: center;
+    align-items: center;
+    animation-name:discount-frame;
+    animation-duration:4s;
+    animation-timing-function:ease-out;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+}
+
+#notice p span {
+    font-size:24px;
+    margin:0;
+    font-weight: 700;
+    color: rgb(13, 189, 36);
+
+}
+
+
+
+@keyframes discount-frame{
+    0%{
+        transform: translateX(10px);
+    }
+    25%{
+        transform: translateX(-10px);
+    }
+    50%{
+        transform: translateX(10px);
+    }
+    75%{
+        transform: translateX(-10px);
+    }
+    100%{
+        transform: translateX(10px);
+    }
+}
+
 #checkout-content {
     margin-top: 100px;
     min-height: 80vh;
@@ -175,7 +223,32 @@ body {
 
 
 
+#promo-code-status{
+    margin: 0;
+    margin-top: 10px;
+    background-color:rgb(153, 235, 250);
+    border-radius: 2px;
+    padding:4px;
+    color: rgb(0, 0, 0);
+    width: fit-content;
+    display: none
+}
 
+
+#discount-coupon-button{
+    background-color:green;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 3px;
+    font-size:12px;
+    cursor: pointer;
+}
+
+
+#discount-coupon-button:hover{
+    background-color:rgb(21, 182, 21)
+}
 
 
 
@@ -202,10 +275,14 @@ body {
     outline: none;
     padding: 18px 36px;
     border-radius: 6px;
-    margin-top: 36px;
+    margin-top: 24px;
     font-weight: 600;
     color: rgba(0, 0, 0, 0.8);
     color: white;
+}
+
+#place-order-button:hover{
+    background-color:#0ac5b2
 }
 
 
