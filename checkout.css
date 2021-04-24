@@ -4,7 +4,6 @@
 
 body {
     margin: 0;
-    /* font-family: 'Poppins', sans-serif; */
     padding: 0;
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
@@ -109,8 +108,6 @@ body {
 
 
 /* Main content */
-
-
 #notice{
     box-sizing: content-box;
     background-color:rgb(247, 247, 247);
@@ -124,8 +121,7 @@ body {
     text-align: center;
     align-items: center;
     animation-name:discount-frame;
-    animation-duration:4s;
-    animation-timing-function:ease-out;
+    animation-duration:6s;
     animation-iteration-count: infinite;
     animation-fill-mode: forwards;
 }
@@ -331,6 +327,15 @@ body {
 
 
 
+/* project Logo */
+
+#project-logo{
+    position: fixed;
+    width: 120px;
+    height: 60px;
+    bottom: 40px;
+    right: 40px;
+}
 
 
 

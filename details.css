@@ -5,11 +5,8 @@
 
 body {
     margin: 0;
-    /* font-family: 'Poppins', sans-serif; */
     padding: 0;
     box-sizing: border-box;
-    /* font-family: 'Kaushan Script', cursive;
-    font-family: 'Montserrat', sans-serif; */
     font-family: 'Open Sans', sans-serif;
 
 }
@@ -131,7 +128,6 @@ body {
 /* Left side */
 .preview-card {
     width: 40%;
-    /* padding: 10px 20px; */
     padding-right: 8%;
     padding-top: 16px;
     box-sizing: border-box;
@@ -148,7 +144,6 @@ body {
 .content-card {
     width: 60%;
     margin-top: 60px;
-    /* padding-left: 30px; */
     box-sizing: border-box;
 }
 
@@ -166,21 +161,6 @@ body {
     margin-top: 8px;
     font-size: 24px;
 }
-
-/* .content-card p {
-    margin-top: 20px;
-    font-size: 14px;
-    font-weight: 400;
-    color: #86939e;
-} */
-
-/* .content-card h3 {
-    margin-top: 20px;
-    font-weight: 400;
-    font-size: 20px;
-    letter-spacing: 1px;
-    color: rgb(27, 25, 25);
-} */
 
 .content-card h3 span {
     color: #009688;
@@ -205,9 +185,7 @@ body {
     font-size: 18px;
     width: 70%;
     margin-top:5px;
-    /* color: rgba(0, 0, 0, 0.8); */
     color: #6d6e6e;
-    /* margin-bottom: 106px; */
     font-weight: 400;
     margin-bottom: 36px;
 }
@@ -251,7 +229,6 @@ body {
 
 /* Page footer */
 
-
 #page-footer {
     display: flex;
     padding: 50px 20%;
@@ -294,6 +271,15 @@ body {
 
 
 
+/* project Logo */
+
+#project-logo{
+    position: fixed;
+    width: 120px;
+    height: 60px;
+    bottom: 40px;
+    right: 40px;
+}
 
 
 

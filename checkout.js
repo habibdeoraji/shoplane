@@ -68,7 +68,11 @@ $(function () {
         var promoCodeValue=$('#discount-coupon').val();
         $('#discount-coupon').val("");
 
-        if(promoCodeValue=="HABIB10"){
+
+        if(!(localStorage.getItem(discountedAmount)>0 || totalAmount>0)){
+            alert('You cart is empty! Add item to apply the coupon.')
+        }
+        else if(promoCodeValue=="HABIB10"){
 
             if(localStorage.getItem('promoCode')=='true'){
                 alert("Promo code is already applied!!")
@@ -90,12 +94,16 @@ $(function () {
 
 
     $('#place-order-button').click(function () {
-        productList = JSON.stringify([]);
+        if(localStorage.getItem(discountedAmount)>0 || totalAmount>0){
+            productList = JSON.stringify([]);
         localStorage.setItem('cartValue', '0');
         localStorage.setItem('productList', productList);
         localStorage.setItem('promoCode', "false");
         localStorage.setItem('discountedAmount',0);
         location.href = './thankyou.html'
+        }else{
+            alert('You cart is empty! Add item to place your order.')
+        }
     })
 
 

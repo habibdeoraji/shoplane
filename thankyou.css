@@ -212,6 +212,15 @@ body{
 } 
 
 
+/* project Logo */
+
+#project-logo{
+    position: fixed;
+    width: 120px;
+    height: 60px;
+    bottom: 40px;
+    right: 40px;
+}
 
 
 
